@@ -1,0 +1,25 @@
+.product-section {
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    transparent 80%,
+    $lightBlue 80%,
+    $lightBlue 100%
+  );
+
+  .container {
+    .title-wrapper {
+      p {
+        margin: 0 2.5rem;
+        font-size: 14px;
+        font-weight: 500;
+      }
+      h1 {
+        margin: 0 2.5rem;
+        font-weight: 700;
+        font-size: 2rem;
+        color: $lightBlue;
+      }
+    }
+  }
+}
