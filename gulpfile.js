@@ -29,7 +29,7 @@ function watchJS() {
 function browserSyncServe(cb) {
     browserSync.init({
         server : {
-            baseDir: '.'
+            baseDir: ['.', './pages/*.html'],
         },
         notify: {
             styles: {
