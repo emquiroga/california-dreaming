@@ -10,6 +10,12 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./dist/style.css" />
     <title>Home</title>
   </head>
@@ -20,11 +26,11 @@
         <img src="./dist/assets/logo.svg" alt="California Dreaming Logo" />
       </div>
       <div class="nav-right">
-        <div class="nav-buttons-wrapper">
-          <button class="nav-button">
+        <div class="btn-navs-wrapper">
+          <button class="btn-nav">
             <img src="./dist/assets/share.svg" alt="Share button" />
           </button>
-          <button class="nav-button">
+          <button class="btn-nav">
             <img src="./dist/assets/menu.svg" alt="Menu button" />
           </button>
         </div>
@@ -32,60 +38,58 @@
     </nav>
     <!--Navbar-->
     <!--Main-->
-    <main>
-      <section class="product-section">
-        <div class="container">
-          <div class="title-wrapper">
-            <p>Elige tu</p>
-            <h1>Producto</h1>
-          </div>
-          <div class="carousel">
-            <div class="carousel-item">
-              <div class="product-wrapper">
-                <div class="product-item-image">
-                  <img src="./dist/assets/slide-1.jpg" alt="" />
-                </div>
-                <div class="product-item-info">
-                  <p>Product info</p>
-                </div>
-              </div>
+    <div class="carousel">
+      <p>Elige tu</p>
+      <h1>Producto</h1>
+      <div class="carousel-inner">
+        <div class="carousel-item">
+          <div class="product-wrapper">
+            <div class="slider-card-img">
+              <img src="./dist/assets/slide-1.jpg" alt="Product 1" />
             </div>
-            <div class="carousel-item">
-              <div class="product-wrapper">
-                <div class="product-item-image">
-                  <img src="./dist/assets/slide-1.jpg" alt="" />
-                </div>
-                <div class="product-item-info">
-                  <p>Product info</p>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="product-wrapper">
-                <div class="product-item-image">
-                  <img src="./dist/assets/slide-1.jpg" alt="" />
-                </div>
-                <div class="product-item-info">
-                  <p>Product info</p>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="product-wrapper">
-                <div class="product-item-image">
-                  <img src="./dist/assets/slide-1.jpg" alt="" />
-                </div>
-                <div class="product-item-info">
-                  <p>Product info</p>
-                </div>
-              </div>
+            <div class="slider-card-info">
+              <h2>Product info</h2>
             </div>
           </div>
-          <button class="btn-carousel left"><</button
-          ><button class="btn-carousel right">></button>
         </div>
-      </section>
-    </main>
+        <div class="carousel-item">
+          <div class="product-wrapper">
+            <div class="slider-card-img">
+              <img src="./dist/assets/slide-1.jpg" alt="Product 1" />
+            </div>
+            <div class="slider-card-info">
+              <h2>Product info</h2>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="product-wrapper">
+            <div class="slider-card-img">
+              <img src="./dist/assets/slide-1.jpg" alt="Product 1" />
+            </div>
+            <div class="slider-card-info">
+              <h2>Product info</h2>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="product-wrapper">
+            <div class="slider-card-img">
+              <img src="./dist/assets/slide-1.jpg" alt="Product 1" />
+            </div>
+            <div class="slider-card-info">
+              <h2>Product info</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="btn-carousel right">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+      <button class="btn-carousel left hidden">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+    </div>
     <!--Main-->
     <!--Footer-->
     <!--Footer-->
