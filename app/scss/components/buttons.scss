@@ -1,6 +1,28 @@
+.btn {
+  display: block;
+  cursor: pointer;
+}
+
 .btn-nav {
   background-color: transparent;
   border: none;
+  transition: $t-150;
+
+  &:hover {
+    svg {
+      width: 100%;
+      height: 100%;
+
+      g {
+        line,
+        path {
+          stroke: $lightBlue;
+
+          fill: $lightBlue;
+        }
+      }
+    }
+  }
 }
 .btn-carousel {
   width: 48px;
@@ -33,10 +55,13 @@
     @include breakpoint-up("medium") {
       background-color: $lightBlue;
       top: 40px;
-      right: 75px;
+      right: 3rem;
       border-radius: 0.5rem !important;
       box-shadow: 0px 0px 4px 0px $lightBlue;
       color: $white;
+    }
+    @include breakpoint-up("medium") {
+      right: 5rem;
     }
   }
 }

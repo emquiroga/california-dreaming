@@ -25,6 +25,9 @@ nav {
     img {
       width: 100px;
       height: auto;
+      &:hover {
+        color: $lightBlue;
+      }
 
       @include breakpoint-up("medium") {
         height: 125px;
@@ -43,15 +46,6 @@ nav {
       gap: 0.5rem;
       justify-content: center;
       align-self: center;
-
-      img {
-        @include breakpoint-up("medium") {
-          width: 32px;
-        }
-        @include breakpoint-up("large") {
-          width: 40px;
-        }
-      }
     }
   }
 }
