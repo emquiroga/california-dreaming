@@ -93,3 +93,43 @@
     box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.5);
   }
 }
+.btn-beneficio {
+  width: 328px;
+  height: 48px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  font-family: $font-primary;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: $white;
+  color: $lightBlue;
+  border: none;
+  border-radius: 0.5rem;
+  margin: 1rem auto;
+  transition: $t-150;
+
+  &:hover {
+    background-color: #42bec2;
+    color: $white;
+    border: 1px solid #42bec2;
+  }
+
+  @include breakpoint-up("medium") {
+    background-color: $lightBlue;
+    position: absolute;
+    top: 24px;
+    right: 10rem;
+    border-radius: 0.5rem !important;
+    box-shadow: 0px 0px 4px 0px $lightBlue;
+    color: $white;
+
+    &:hover {
+      background-color: $white;
+      color: $lightBlue;
+      border: none;
+      box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.5);
+    }
+  }
+}

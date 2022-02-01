@@ -13,12 +13,8 @@ nav {
   background: white;
 
   @include breakpoint-up("medium") {
-    height: 125px;
-  }
-
-  @include breakpoint-up("large") {
-    height: 180px;
     padding: 3rem 5rem;
+    height: 125px;
   }
 
   .nav-left {
