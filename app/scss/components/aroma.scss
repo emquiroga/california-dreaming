@@ -1,0 +1,14 @@
+.container-aroma {
+  width: 100%;
+  position: relative;
+  .card-container {
+    width: 100%;
+    max-width: 100vw;
+    min-height: 450px;
+    height: 55vh;
+    margin-top: 0.5rem;
+    display: block;
+    box-sizing: content-box;
+    overflow-y: scroll;
+  }
+}
