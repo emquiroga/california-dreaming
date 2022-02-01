@@ -11,7 +11,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   background: white;
-  z-index: 100;
+  z-index: 999999;
 
   @include breakpoint-up("medium") {
     padding: 3rem 5rem;
