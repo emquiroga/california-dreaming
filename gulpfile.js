@@ -47,7 +47,7 @@ function browserSyncReload(cb) {
 
 //Live watch
 function watchTask() {
-    watch('*.html', browserSyncReload);
+    watch(['*.html', './pages/*.html'], browserSyncReload);
     watch(
         ['app/scss/**/*.scss', 'app/**/*.js'],
         series(watchSass, watchJS, browserSyncReload)
