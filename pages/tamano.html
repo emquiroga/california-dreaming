@@ -17,9 +17,9 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../dist/style.css" />
-    <title>Mood</title>
+    <title>tamano</title>
   </head>
-  <body id="body">
+  <body id="body" class="bg-white">
     <!--Navbar-->
     <nav>
       <div class="nav-left">
@@ -29,6 +29,55 @@
       </div>
       <div class="nav-right">
         <div class="btn-navs-wrapper">
+          <button class="btn btn-nav">
+            <a href="#">
+              <svg
+                id="arrow"
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+              >
+                <g id="arrow-2" data-name="arrow">
+                  <rect
+                    id="Rectángulo_1327"
+                    data-name="Rectángulo 1327"
+                    width="32"
+                    height="32"
+                    fill="none"
+                  />
+                </g>
+                <g
+                  id="Grupo_653"
+                  data-name="Grupo 653"
+                  transform="translate(9 11)"
+                >
+                  <path
+                    id="Trazado_984"
+                    data-name="Trazado 984"
+                    d="M1588.959,512.809l-5.272,5.259,5.272,5.347"
+                    transform="translate(-1583.687 -512.809)"
+                    fill="none"
+                    stroke="#222"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                  />
+                  <line
+                    id="Línea_110"
+                    data-name="Línea 110"
+                    x1="14.057"
+                    transform="translate(0 5.259)"
+                    fill="none"
+                    stroke="#222"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                  />
+                </g>
+              </svg>
+            </a>
+          </button>
           <button class="btn btn-nav" id="shareButton">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -209,13 +258,13 @@
           <a href="../index.html  " class="menu-link">HOME</a>
         </li>
         <li class="menu-item">
+          <a href="./mood.html" class="menu-link">MOOD</a>
+        </li>
+        <li class="menu-item">
           <a href="./aroma.html" class="menu-link">AROMA</a>
         </li>
         <li class="menu-item">
           <a href="./fragancia.html" class="menu-link">FRAGANCIA</a>
-        </li>
-        <li class="menu-item">
-          <a href="./tamano.html" class="menu-link">tamano</a>
         </li>
       </ul>
     </div>
@@ -240,56 +289,26 @@
     <!--Main-->
     <div class="slide-container">
       <p>Elige tu</p>
-      <h1>Mood</h1>
+      <h1>tamano</h1>
       <div class="slide-container-inner">
-        <div class="product-card mood">
-          <div class="product-wrapper">
-            <div class="slider-card-img">
-              <img class="" src="../dist/assets/party.jpg" alt="Product 1" />
-            </div>
-            <div class="slider-card-info">
-              <h2>Party</h2>
-            </div>
+        <div class="price-card">
+          <div class="price-card-image">
+            <img src="../dist/assets/tamano/large.png" alt="" />
           </div>
-        </div>
-        <div class="product-card mood">
-          <div class="product-wrapper">
-            <div class="slider-card-img">
-              <img class="" src="../dist/assets/relax.jpg" alt="Product 1" />
+          <div class="price-card-wrapper">
+            <div class="input-wrapper">
+              <label for="">
+                <input type="checkbox" name="" id="" />
+              </label>
             </div>
-            <div class="slider-card-info">
-              <h2>Relax</h2>
-            </div>
-          </div>
-        </div>
-        <div class="product-card mood">
-          <div class="product-wrapper">
-            <div class="slider-card-img">
-              <img class="" src="../dist/assets/focus.jpg" alt="Product 1" />
-            </div>
-            <div class="slider-card-info">
-              <h2>Focus</h2>
-            </div>
-          </div>
-        </div>
-        <div class="product-card mood">
-          <div class="product-wrapper">
-            <div class="slider-card-img">
-              <img class="" src="../dist/assets/sport.jpg" alt="Product 1" />
-            </div>
-            <div class="slider-card-info">
-              <h2>Sport</h2>
+            <div class="value-wrapper">
+              <p class="value-money">$</p>
+              <p class="value-number">16.</p>
+              <p class="value-subnumber">50</p>
             </div>
           </div>
         </div>
       </div>
-      <button class="btn btn-slide-container right">
-        <i class="fas fa-chevron-right"></i>
-      </button>
-      <button class="btn btn-slide-container left hidden">
-        <i class="fas fa-chevron-left"></i>
-      </button>
-      <button class="btn btn-beneficio">SELECCIONAR POR BENEFICIO</button>
     </div>
     <!--Main-->
     <!--Scripts-->
