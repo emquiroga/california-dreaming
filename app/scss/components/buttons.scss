@@ -24,7 +24,7 @@
     }
   }
 }
-.btn-carousel {
+.btn-slide-container {
   width: 48px;
   height: 96px;
   position: absolute;
@@ -54,13 +54,14 @@
     border-radius: 0.5rem 0 0 0.5rem;
     @include breakpoint-up("medium") {
       background-color: $lightBlue;
-      top: 40px;
+      top: 15px;
       right: 3rem;
       border-radius: 0.5rem !important;
       box-shadow: 0px 0px 4px 0px $lightBlue;
       color: $white;
     }
-    @include breakpoint-up("medium") {
+    @include breakpoint-up("large") {
+      top: 40px;
       right: 5rem;
     }
   }
@@ -96,6 +97,7 @@
 .btn-beneficio {
   width: 328px;
   height: 48px;
+  margin-bottom: 2rem;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -119,7 +121,7 @@
   @include breakpoint-up("medium") {
     background-color: $lightBlue;
     position: absolute;
-    top: 24px;
+    top: -1px;
     right: 10rem;
     border-radius: 0.5rem !important;
     box-shadow: 0px 0px 4px 0px $lightBlue;
@@ -131,5 +133,8 @@
       border: none;
       box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.5);
     }
+  }
+  @include breakpoint-up("large") {
+    top: 24px;
   }
 }
