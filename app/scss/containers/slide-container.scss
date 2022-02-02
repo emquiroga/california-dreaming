@@ -1,6 +1,10 @@
 .slide-container {
   position: relative;
 
+  @include breakpoint-up("medium") {
+    padding-bottom: 3rem;
+  }
+
   .slide-container-inner {
     display: flex;
     flex-direction: row;
@@ -10,10 +14,6 @@
     overflow-x: scroll;
     scroll-behavior: smooth;
     scrollbar-width: none;
-
-    @include breakpoint-up("medium") {
-      padding-bottom: 3rem;
-    }
 
     @include breakpoint-up("large") {
       margin-left: 2rem;

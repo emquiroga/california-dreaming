@@ -5,18 +5,16 @@
   min-height: 377px;
   height: 45vh;
   max-height: 400px;
+  margin-top: 1.5rem;
   margin-left: 1.5rem;
   overflow: hidden;
-  cursor: pointer;
 
   @include breakpoint-up("medium") {
     min-height: 400px;
     height: 65vh;
     max-height: 510px;
-  }
-
-  @include breakpoint-up("large") {
-    margin-left: 2rem;
+    max-width: 352px;
+    margin-left: 5rem;
   }
 
   &:last-of-type {
@@ -37,6 +35,50 @@
     img {
       min-height: 330px;
       width: 100%;
+    }
+  }
+  .price-card-value {
+    width: 200px;
+    height: 40px;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    font-family: $font-primary;
+
+    .control-wrapper {
+      height: 100%;
+      width: 50%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      color: $lightBlue;
+      font-size: 14px;
+      @include breakpoint-up("medium") {
+        font-size: 18px;
+      }
+    }
+    .value-wrapper {
+      height: 100%;
+      width: 50%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      color: $disabled;
+      font-size: 16px;
+
+      @include breakpoint-up("medium") {
+        font-size: 18px;
+      }
+
+      .value-subnumber {
+        font-size: 8px;
+        margin-bottom: 5px;
+        @include breakpoint-up("medium") {
+          font-size: 10px;
+        }
+      }
     }
   }
 }
