@@ -13,6 +13,13 @@
 .text-lightBlue {
   color: $lightBlue !important;
 }
+.link-active {
+  @extend .text-lightBlue;
+
+  & a {
+    @extend .text-lightBlue;
+  }
+}
 .no-scroll {
   overflow: hidden !important;
 }
