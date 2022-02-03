@@ -41,6 +41,7 @@
     @extend .product-wrapper;
     padding: 1rem 0;
     border-radius: 0;
+    gap: 1rem;
     @include breakpoint-up("medium") {
       flex-flow: row wrap;
       gap: 2rem;

@@ -139,6 +139,10 @@
     background-color: #42bec2;
     color: $white;
     border: 1px solid #42bec2;
+
+    a {
+      color: $white;
+    }
   }
 
   @include breakpoint-up("medium") {
@@ -160,4 +164,14 @@
   @include breakpoint-up("large") {
     top: 24px;
   }
+  a {
+    color: $lightBlue;
+    text-decoration: none;
+    font-family: $font-primary;
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
+.btn-mood {
+  @extend .btn-primary;
 }
