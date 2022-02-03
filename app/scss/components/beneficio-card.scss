@@ -1,0 +1,14 @@
+.beneficio-card {
+  min-width: 300px;
+  width: 80%;
+  max-width: 328px;
+  height: 64px;
+  margin: 1rem auto;
+  padding-left: 2rem;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  gap: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
