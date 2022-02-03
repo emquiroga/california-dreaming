@@ -14,21 +14,32 @@
     scrollbar-width: none;
 
     @include breakpoint-up("medium") {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+      display: grid !important;
+      grid-template-columns: 1fr 1fr !important;
     }
     @include breakpoint-up("large") {
-      max-width: 1200px;
-      margin: auto;
-      grid-template-columns: 1fr 1fr 1fr;
+      max-width: 1200px !important;
+      margin: auto !important;
+      grid-template-columns: 1fr 1fr 1fr !important;
     }
 
     &.beneficio {
       min-height: 200px;
       height: 50vh;
-      max-height: 3500px;
+      max-height: 350px;
+      margin: 2rem auto;
       display: flex;
       flex-flow: column;
+
+      @include breakpoint-up("medium") {
+        height: 500px;
+        max-height: 500px !important;
+        margin: 5rem auto !important;
+        padding-bottom: 0;
+      }
+      @include breakpoint-up("large") {
+        margin: 5rem auto !important;
+      }
     }
   }
 }

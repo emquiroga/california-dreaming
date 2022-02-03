@@ -19,18 +19,6 @@
       margin-right: 2rem;
     }
   }
-
-  &.mood {
-    min-height: 377px;
-    height: 45vh;
-    max-height: 400px;
-
-    @include breakpoint-up("medium") {
-      min-height: 400px;
-      height: 65vh;
-      max-height: 510px;
-    }
-  }
 }
 
 .product-wrapper {
