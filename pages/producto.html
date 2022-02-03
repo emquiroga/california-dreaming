@@ -17,7 +17,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../dist/style.css" />
-    <title>Tamaño</title>
+    <title>Producto</title>
   </head>
   <body id="body" class="bg-white">
     <!--Navbar-->
@@ -30,7 +30,7 @@
       <div class="nav-right">
         <div class="btn-navs-wrapper">
           <button class="btn btn-nav" id="returnButton">
-            <a href="#">
+            <a href="./tamano.html">
               <svg
                 id="arrow"
                 xmlns="http://www.w3.org/2000/svg"
@@ -287,68 +287,46 @@
     </div>
     <!--Share-->
     <!--Main-->
-    <div class="slide-container">
-      <p class="title-description">Elige tu</p>
-      <h1 class="title-header text-lightBlue">Tamaño</h1>
-      <div class="slide-container-inner">
-        <div class="price-card">
-          <div class="price-card-image">
-            <img src="../dist/assets/tamano/large.png" alt="" />
+    <p class="title-description">Personaliza con tu nombre tu</p>
+    <h1 class="title-header text-lightBlue">Producto</h1>
+    <div class="form-container">
+      <form action="" class="product-form">
+        <div class="form-control">
+          <label for="name"></label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="¡Escribe tu nombre aquí"
+          />
+        </div>
+        <div class="form-product-wrapper">
+          <div class="col">
+            <img
+              class="product-image"
+              src="../dist/assets/tamano/large.png"
+              alt=""
+            />
           </div>
-          <div class="price-card-value">
-            <div class="control-wrapper">
-              <label for="" class="card-label">
-                150 ml
-                <input type="checkbox" name="" id="" class="card-input" />
-              </label>
+          <div class="col">
+            <div class="product-title">
+              <p class="product-title-description">Tu producto</p>
+              <h3 class="product-title-header">Elegido</h3>
             </div>
-            <div class="value-wrapper">
-              <span class="value-money">$</span>
-              <span class="value-number">16.</span>
-              <span class="value-subnumber">50</span>
-            </div>
+            <ul class="product-list">
+              <h3 class="product-item-title text-lightBlue">
+                Bálsamo para Barba
+              </h3>
+              <li class="product-list-item">Relax</li>
+              <li class="product-list-item">Anti-inflamatorio</li>
+              <li class="product-list-item">Ciprés, Limón</li>
+              <li class="product-list-item">Tamaño 100ml</li>
+              <li class="product-list-item text-lightBlue">$12.50</li>
+            </ul>
+            <button class="btn btn-primary">COMPRAR</button>
           </div>
         </div>
-        <div class="price-card">
-          <div class="price-card-image">
-            <img src="../dist/assets/tamano/medium.png" alt="" />
-          </div>
-          <div class="price-card-value">
-            <div class="control-wrapper">
-              <label for="" class="card-label">
-                100 ml
-                <input type="checkbox" name="" id="" class="card-input" />
-              </label>
-            </div>
-            <div class="value-wrapper">
-              <span class="value-money">$</span>
-              <span class="value-number">16.</span>
-              <span class="value-subnumber">50</span>
-            </div>
-          </div>
-        </div>
-        <div class="price-card">
-          <div class="price-card-image">
-            <img src="../dist/assets/tamano/small.png" alt="" />
-          </div>
-          <div class="price-card-value">
-            <div class="control-wrapper">
-              <label for="" class="card-label">
-                75 ml
-                <input type="checkbox" name="" id="" class="card-input" />
-              </label>
-            </div>
-            <div class="value-wrapper">
-              <span class="value-money">$</span>
-              <span class="value-number">16.</span>
-              <span class="value-subnumber">50</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <button class="btn btn-primary">
-        <a href="./producto.html">CONTINUAR</a>
-      </button>
+      </form>
     </div>
     <!--Main-->
     <!--Scripts-->

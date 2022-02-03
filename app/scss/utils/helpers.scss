@@ -10,6 +10,40 @@
 .bg-white {
   background: $white !important;
 }
+.text-lightBlue {
+  color: $lightBlue !important;
+}
 .no-scroll {
   overflow: hidden !important;
+}
+.title-description {
+  max-width: 500px;
+  margin: 0 2.5rem;
+  font-size: 14px;
+  font-weight: 500;
+
+  @include breakpoint-up("medium") {
+    font-size: 16px;
+  }
+  @include breakpoint-up("large") {
+    margin: 0 5rem;
+    font-size: 28px;
+  }
+}
+.title-header {
+  max-width: 500px;
+  margin: 0 2.5rem;
+  font-weight: 700;
+  font-size: 2rem;
+  @include breakpoint-up("medium") {
+    font-size: 40px;
+  }
+  @include breakpoint-up("large") {
+    margin: 0 5rem;
+    font-size: 60px;
+  }
+}
+.col {
+  display: flex;
+  flex-direction: column;
 }
