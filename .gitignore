@@ -13,8 +13,6 @@
 
 # development
 /app
-gulpfile.js
-package-lock.json
 
 # misc
 .DS_Store
