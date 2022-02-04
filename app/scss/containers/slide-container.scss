@@ -1,22 +1,24 @@
 .slide-container {
   position: relative;
 
-  @include breakpoint-up("medium") {
-    padding-bottom: 3rem;
-  }
-
   .slide-container-inner {
+    padding: 2rem 1rem;
     display: flex;
     flex-direction: row;
     align-items: center;
+    gap: 1.5rem;
     box-sizing: content-box;
     overflow-y: visible;
     overflow-x: scroll;
     scroll-behavior: smooth;
     scrollbar-width: none;
 
+    @include breakpoint-up("medium") {
+      pading: 3rem 1.5rem;
+    }
+
     @include breakpoint-up("large") {
-      margin-left: 2rem;
+      padding: 3rem 5rem;
     }
 
     &::-webkit-scrollbar {

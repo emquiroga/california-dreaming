@@ -2,11 +2,12 @@
   min-width: 180px;
   width: 50%;
   max-width: 312px;
-  min-height: 377px;
+  min-height: 350px;
   height: 45vh;
-  max-height: 400px;
-  margin-top: 1.5rem;
-  margin-left: 1.5rem;
+  max-height: 450px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
   overflow: hidden;
 
   @include breakpoint-up("medium") {
@@ -52,10 +53,47 @@
       flex-direction: row;
       justify-content: center;
       align-items: center;
-      color: $lightBlue;
+      position: relative;
       font-size: 14px;
       @include breakpoint-up("medium") {
         font-size: 18px;
+      }
+
+      .card-label {
+        color: $lightBlue;
+        font-weight: 700;
+      }
+      .card-input {
+        width: 14px;
+        height: 14px;
+        left: 0;
+        top: 9px;
+        margin: 0 0.5rem;
+        padding: 0;
+        position: absolute;
+
+        &:after {
+          content: " ";
+          width: 14px;
+          height: 14px;
+          display: flex;
+          background-color: $white;
+          color: $lightBlue;
+          font-weight: 700;
+          border: 2px solid $lightBlue;
+        }
+        &:checked {
+          &:after {
+            width: 14px;
+            height: 14px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            content: "✓";
+            background-color: $white;
+            border: 2px solid $lightBlue;
+          }
+        }
       }
     }
     .value-wrapper {
