@@ -44,6 +44,8 @@
     margin: auto;
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
     font-family: $font-primary;
 
     .control-wrapper {
@@ -103,20 +105,20 @@
       flex-direction: row;
       justify-content: center;
       align-items: center;
-      color: $disabled;
-      font-size: 16px;
-
-      @include breakpoint-up("medium") {
-        font-size: 18px;
-      }
-
-      .value-subnumber {
-        font-size: 8px;
-        margin-bottom: 5px;
-        @include breakpoint-up("medium") {
-          font-size: 10px;
-        }
-      }
     }
+  }
+}
+.value-money,
+.value-number {
+  font-size: 16px;
+
+  @include breakpoint-up("medium") {
+    font-size: 18px;
+  }
+}
+.value-subnumber {
+  font-size: 8px;
+  @include breakpoint-up("medium") {
+    font-size: 10px;
   }
 }

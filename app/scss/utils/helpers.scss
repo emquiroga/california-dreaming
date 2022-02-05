@@ -13,6 +13,9 @@
 .text-lightBlue {
   color: $lightBlue !important;
 }
+.text-disabled {
+  color: $disabled !important;
+}
 .link-active {
   @extend .text-lightBlue;
 
