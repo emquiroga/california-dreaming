@@ -5,7 +5,7 @@
 
 # Captures
 
-![image](https://imgur.com/a/ToeZSO6.png)
+![image](https://imgur.com/l1tLYWk.png)
 ![image](https://imgur.com/45xhhvW.png)
 ![image](https://imgur.com/UC2dc6J.png)
 ![image](https://imgur.com/xsXw0ef.png)
