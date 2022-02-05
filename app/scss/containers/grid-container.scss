@@ -1,0 +1,45 @@
+.container-grid {
+  width: 100%;
+  position: relative;
+  .container-grid-inner {
+    width: 100%;
+    max-width: 100vw;
+    min-height: 450px;
+    height: 70vh;
+    margin-top: 0.5rem;
+    padding-bottom: 5vh;
+    box-sizing: content-box;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+
+    @include breakpoint-up("medium") {
+      display: grid !important;
+      grid-template-columns: 1fr 1fr !important;
+    }
+    @include breakpoint-up("large") {
+      max-width: 1200px !important;
+      margin: auto !important;
+      grid-template-columns: 1fr 1fr 1fr !important;
+    }
+
+    &.beneficio {
+      min-height: 200px;
+      height: 50vh;
+      max-height: 350px;
+      margin: auto;
+      display: flex;
+      flex-flow: column;
+
+      @include breakpoint-up("medium") {
+        height: 500px;
+        max-height: 500px !important;
+        margin: 5rem auto !important;
+        padding-bottom: 0;
+      }
+      @include breakpoint-up("large") {
+        margin: 5rem auto !important;
+      }
+    }
+  }
+}

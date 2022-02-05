@@ -1,0 +1,122 @@
+.price-card {
+  min-width: 180px;
+  width: 50%;
+  max-width: 312px;
+  min-height: 350px;
+  height: 45vh;
+  max-height: 450px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  overflow: hidden;
+
+  @include breakpoint-up("medium") {
+    min-height: 400px;
+    height: 65vh;
+    max-height: 510px;
+    max-width: 352px;
+    margin-left: 5rem;
+  }
+
+  &:last-of-type {
+    margin-right: 1.5rem;
+
+    @include breakpoint-up("large") {
+      margin-right: 2rem;
+    }
+  }
+
+  .price-card-image {
+    width: 100%;
+    height: 80%;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.25);
+
+    img {
+      min-height: 330px;
+      width: 100%;
+    }
+  }
+  .price-card-value {
+    width: 200px;
+    height: 40px;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    font-family: $font-primary;
+
+    .control-wrapper {
+      height: 100%;
+      width: 50%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      font-size: 14px;
+      @include breakpoint-up("medium") {
+        font-size: 18px;
+      }
+
+      .card-label {
+        color: $lightBlue;
+        font-weight: 700;
+      }
+      .card-input {
+        width: 14px;
+        height: 14px;
+        left: 0;
+        top: 9px;
+        margin: 0 0.5rem;
+        padding: 0;
+        position: absolute;
+
+        &:after {
+          content: " ";
+          width: 14px;
+          height: 14px;
+          display: flex;
+          background-color: $white;
+          color: $lightBlue;
+          font-weight: 700;
+          border: 2px solid $lightBlue;
+        }
+        &:checked {
+          &:after {
+            width: 14px;
+            height: 14px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            content: "✓";
+            background-color: $white;
+            border: 2px solid $lightBlue;
+          }
+        }
+      }
+    }
+    .value-wrapper {
+      height: 100%;
+      width: 50%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      color: $disabled;
+      font-size: 16px;
+
+      @include breakpoint-up("medium") {
+        font-size: 18px;
+      }
+
+      .value-subnumber {
+        font-size: 8px;
+        margin-bottom: 5px;
+        @include breakpoint-up("medium") {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}

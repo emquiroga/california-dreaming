@@ -1,0 +1,18 @@
+.content-container {
+  width: 80%;
+  max-width: 600px;
+  margin: 2rem auto;
+
+  @include breakpoint-up("medium") {
+    margin-top: 5rem;
+  }
+
+  .content-title {
+    font-weight: 700;
+    font-size: 2rem;
+  }
+  .content-text {
+    font-size: 14px;
+    line-height: 1.75;
+  }
+}
