@@ -199,6 +199,10 @@
   background-color: transparent;
   border: none;
   transition: $t-150;
+
+  &:hover {
+    color: $lightBlue;
+  }
   @include breakpoint-up("medium") {
     background-color: $lightBlue;
     border-radius: 0.5rem;

@@ -85,6 +85,13 @@
       }
       .product-list-item {
         list-style: none;
+
+        &.value {
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: flex-start;
+          align-items: center;
+        }
       }
     }
   }
