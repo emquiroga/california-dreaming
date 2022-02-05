@@ -7,8 +7,14 @@
 .w-100 {
   width: 100% !important;
 }
-.bg-white {
-  background: $white !important;
+.bg-lightBlue {
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    transparent 80%,
+    $lightBlue 80%,
+    $lightBlue 100%
+  );
 }
 .text-lightBlue {
   color: $lightBlue !important;
