@@ -63,15 +63,13 @@
 
       .card-label {
         color: $lightBlue;
-        font-weight: 700;
+        font-size: 16px;
       }
       .card-input {
         width: 14px;
         height: 14px;
         left: 0;
-        top: 9px;
-        margin: 0 0.5rem;
-        padding: 0;
+        top: 7px;
         position: absolute;
 
         &:after {
