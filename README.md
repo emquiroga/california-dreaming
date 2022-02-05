@@ -1,3 +1,3 @@
 # California Dreaming
 
-### Original files in /development
+### Build with sass, html and javascript.
