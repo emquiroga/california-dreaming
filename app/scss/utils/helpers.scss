@@ -15,6 +15,18 @@
     $lightBlue 80%,
     $lightBlue 100%
   );
+
+  &.bg-large {
+    @include breakpoint-up("large") {
+      background: linear-gradient(
+        to bottom,
+        transparent,
+        transparent 40%,
+        $lightBlue 40%,
+        $lightBlue 100%
+      );
+    }
+  }
 }
 .text-lightBlue {
   color: $lightBlue !important;
