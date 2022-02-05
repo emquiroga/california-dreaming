@@ -19,13 +19,6 @@ body {
   position: relative;
   overflow-x: hidden;
 
-  background: linear-gradient(
-    to bottom,
-    transparent,
-    transparent 80%,
-    $lightBlue 80%,
-    $lightBlue 100%
-  );
   a {
     text-decoration: none;
   }
