@@ -15,6 +15,7 @@
   flex-direction: column;
   position: relative;
   border-radius: 1rem;
+  box-shadow: $default-shadow;
   overflow: hidden;
 
   .slider-card-img {
@@ -37,7 +38,7 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    background-color: rgba(255, 255, 255, 0.25);
+    background-color: $bg-blur;
 
     h2 {
       width: 35%;

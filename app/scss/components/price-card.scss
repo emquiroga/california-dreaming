@@ -1,5 +1,5 @@
 .price-card {
-  min-width: 180px;
+  min-width: 190px;
   width: 50%;
   max-width: 312px;
   min-height: 350px;
@@ -27,11 +27,12 @@
   }
 
   .price-card-image {
-    width: 100%;
+    width: 90%;
     height: 80%;
+    margin: auto;
     border-radius: 1rem;
     overflow: hidden;
-    box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: $default-shadow;
 
     img {
       min-height: 330px;
@@ -44,13 +45,14 @@
     margin: auto;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    gap: 0.5rem;
     font-family: $font-primary;
 
     .control-wrapper {
       height: 100%;
-      width: 50%;
+      width: auto;
       display: flex;
       flex-direction: row;
       justify-content: center;
@@ -68,7 +70,7 @@
       .card-input {
         width: 14px;
         height: 14px;
-        left: 0;
+        left: -30px;
         top: 7px;
         position: absolute;
 
@@ -98,7 +100,7 @@
     }
     .value-wrapper {
       height: 100%;
-      width: 50%;
+      width: auto;
       display: flex;
       flex-direction: row;
       justify-content: center;
