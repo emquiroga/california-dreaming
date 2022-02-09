@@ -17,9 +17,9 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../style.css" />
-    <title>Mood</title>
+    <title>Producto</title>
   </head>
-  <body id="body" class="bg-lightBlue">
+  <body id="body" class="">
     <!--Navbar-->
     <nav>
       <div class="nav-left">
@@ -29,6 +29,55 @@
       </div>
       <div class="nav-right">
         <div class="btn-navs-wrapper">
+          <button class="btn btn-nav" id="returnButton">
+            <a href="./tamano.html">
+              <svg
+                id="arrow"
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+              >
+                <g id="arrow-2" data-name="arrow">
+                  <rect
+                    id="Rectángulo_1327"
+                    data-name="Rectángulo 1327"
+                    width="32"
+                    height="32"
+                    fill="none"
+                  />
+                </g>
+                <g
+                  id="Grupo_653"
+                  data-name="Grupo 653"
+                  transform="translate(9 11)"
+                >
+                  <path
+                    id="Trazado_984"
+                    data-name="Trazado 984"
+                    d="M1588.959,512.809l-5.272,5.259,5.272,5.347"
+                    transform="translate(-1583.687 -512.809)"
+                    fill="none"
+                    stroke="#222"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                  />
+                  <line
+                    id="Línea_110"
+                    data-name="Línea 110"
+                    x1="14.057"
+                    transform="translate(0 5.259)"
+                    fill="none"
+                    stroke="#222"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                  />
+                </g>
+              </svg>
+            </a>
+          </button>
           <button class="btn btn-nav" id="shareButton">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -206,10 +255,10 @@
     <div class="menu-container hidden" id="menu">
       <ul class="menu-list">
         <li class="menu-item">
-          <a href="../../index.html" class="menu-link">HOME</a>
+          <a href="../../index.html  " class="menu-link">HOME</a>
         </li>
-        <li class="menu-item link-active">
-          <a href="./mood.html" class="menu-link">MOOD</a>
+        <li class="menu-item">
+          <a href="./producto.html" class="menu-link">PRODUCTO</a>
         </li>
         <li class="menu-item">
           <a href="./aroma.html" class="menu-link">AROMA</a>
@@ -244,62 +293,50 @@
     </div>
     <!--Share-->
     <!--Main-->
-    <div class="slide-container">
-      <p class="title-description">Elige tu</p>
-      <h1 class="title-header text-lightBlue">Mood</h1>
-      <div class="slide-container-inner">
-        <div class="product-card">
-          <div class="product-wrapper">
-            <div class="slider-card-img">
-              <img class="" src="../assets/mood/party.jpg" alt="Product 1" />
+    <p class="title-description">Personaliza con tu nombre tu</p>
+    <h1 class="title-header text-lightBlue">Producto</h1>
+    <div class="form-container">
+      <form action="" class="product-form">
+        <div class="form-control">
+          <label for="name"></label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="¡Escribe tu nombre aquí"
+          />
+        </div>
+        <div class="form-product-wrapper">
+          <div class="col">
+            <img
+              class="product-image"
+              src="../assets/tamano/large.png"
+              alt=""
+            />
+          </div>
+          <div class="col">
+            <div class="product-title">
+              <p class="product-title-description">Tu producto</p>
+              <h3 class="product-title-header">Elegido</h3>
             </div>
-            <div class="slider-card-info">
-              <h2>Party</h2>
-            </div>
+            <ul class="product-list">
+              <h3 class="product-item-title text-lightBlue">
+                Bálsamo para Barba
+              </h3>
+              <li class="product-list-item">Relax</li>
+              <li class="product-list-item">Anti-inflamatorio</li>
+              <li class="product-list-item">Ciprés, Limón</li>
+              <li class="product-list-item">Tamaño 100ml</li>
+              <li class="product-list-item value text-lightBlue">
+                <span class="value-money">$</span>
+                <span class="value-number">12.</span>
+                <span class="value-subnumber">50</span>
+              </li>
+            </ul>
+            <button class="btn btn-primary">COMPRAR</button>
           </div>
         </div>
-        <div class="product-card">
-          <div class="product-wrapper">
-            <div class="slider-card-img">
-              <img class="" src="../assets/mood/relax.jpg" alt="Product 1" />
-            </div>
-            <div class="slider-card-info">
-              <h2>Relax</h2>
-            </div>
-          </div>
-        </div>
-        <div class="product-card">
-          <div class="product-wrapper">
-            <div class="slider-card-img">
-              <img class="" src="../assets/mood/focus.jpg" alt="Product 1" />
-            </div>
-            <div class="slider-card-info">
-              <h2>Focus</h2>
-            </div>
-          </div>
-        </div>
-        <div class="product-card">
-          <div class="product-wrapper">
-            <div class="slider-card-img">
-              <img class="" src="../assets/mood/sport.jpg" alt="Product 1" />
-            </div>
-            <div class="slider-card-info">
-              <h2>Sport</h2>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="mood-buttons-wrapper">
-        <button class="btn btn-slide-container right">
-          <i class="fas fa-chevron-right"></i>
-        </button>
-        <button class="btn btn-slide-container left hidden">
-          <i class="fas fa-chevron-left"></i>
-        </button>
-        <button class="btn btn-beneficio">
-          <a href="./beneficio.html">SELECCIONAR POR BENEFICIO</a>
-        </button>
-      </div>
+      </form>
     </div>
     <!--Main-->
     <!--Scripts-->

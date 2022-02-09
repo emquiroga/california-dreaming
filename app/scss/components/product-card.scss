@@ -1,11 +1,14 @@
 .product-card {
   min-width: 300px;
   width: 80%;
-  max-width: 312px;
-  min-height: 420px;
-  height: 65vh;
-  max-height: 510px;
+  max-width: 350px;
+  height: 400px;
   cursor: pointer;
+
+  @include breakpoint-up("medium") {
+    max-width: 400px;
+    height: 500px;
+  }
 }
 
 .product-wrapper {
@@ -25,8 +28,9 @@
     overflow: hidden;
 
     img {
-      min-width: 100%;
-      width: auto;
+      object-fit: cover;
+      object-position: top center;
+      width: 100%;
       height: 100%;
     }
   }
