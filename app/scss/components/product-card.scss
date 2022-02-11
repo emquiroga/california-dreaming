@@ -2,12 +2,16 @@
   min-width: 300px;
   width: 80%;
   max-width: 350px;
-  height: 400px;
+  height: 375px;
   cursor: pointer;
 
   @include breakpoint-up("medium") {
     max-width: 400px;
-    height: 500px;
+    height: 450px;
+  }
+  @include breakpoint-up("large") {
+    max-width: 450px;
+    height: 550px;
   }
 }
 
